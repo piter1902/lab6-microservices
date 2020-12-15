@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: accounts-service  # Identify this application
+
+# Application info
+info:
+  app:
+    name: Microservices Demo - Accounts Server
+    description: This is a RESTful web service
+    version: 1.0.0
+
+# HTTP Server
+server:
+  port: 4444   # HTTP (Tomcat) port
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
